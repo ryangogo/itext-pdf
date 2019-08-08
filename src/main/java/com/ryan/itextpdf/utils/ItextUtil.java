@@ -27,7 +27,6 @@ public class ItextUtil {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
         /* 将要生成的目标PDF文件名称 */
         PdfStamper ps = new PdfStamper(reader, bos);
-        PdfContentByte under = ps.getUnderContent(1);
         /* 使用中文字体 */
         BaseFont bf = BaseFont.createFont(fontName, BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
         ArrayList<BaseFont> fontList = new ArrayList<>();
